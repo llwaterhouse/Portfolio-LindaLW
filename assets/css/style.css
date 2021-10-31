@@ -1,0 +1,205 @@
+:root {
+  --white: rgb(241, 231, 231);
+  --green: #006671;
+  --blue: #13293d;
+  --hovergrey: rgb(145, 137, 137);
+}
+/* ??? */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  /* padding: 40px; */
+  /* text-align: center; */
+  /* background: #13293d; */
+  /* color: #fff; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 3%;
+  background-color: var(--blue);
+  color:var(--white);
+  font-family: cursive;
+}
+
+header h1 {
+  /* ??? How to make colored box larger? */
+  /* background-color: #006671; */
+  font-size: 200%;
+}
+/* 
+What happens when we set the display property to flex?
+The flex container becomes flexible 
+*/
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  font-size: 140%;
+}
+
+nav a {
+  color: var(--white);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight:bolder;
+}
+
+nav a:hover {
+  color: var(--hovergrey); 
+  background-color: var(--green);
+
+}
+
+/* banner image styling*/
+/*??? does not take up whole width.  When screen gets larger, aside moves up */
+
+.feature-image {
+  max-height: 500px;
+  height: 400px;
+  margin-bottom: 25px;
+
+}
+/* so that image goes to end? ?? don't understand why we need 100% here and above */
+.feature-image img {
+  height: 100%;
+  width: 100%;
+}
+*/
+/*
+.backgroundimg {
+  background-image: url(../images/New-Jersey-landscape2.jpg);
+background-position: center;
+  position: relative;
+  display:flex;
+  align-items: flex-end
+  height: 500px;
+}
+*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section h2 {
+  color: var(--blue);
+}
+
+aside {
+  flex: 1;
+  background-color: var(--green);
+  padding: 20px;
+  text-align: right;
+  font-size: 300%;
+  min-width: 250px;
+
+  /* border-right: 5px;   ??why doesn't this work? 
+  border-right-color: var(--blue);*/
+}
+/* ?? How to use flex without <div> line coming after "Made" */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--blue) ;
+  color: var(--white);
+}
+
+footer h2{
+  font-size: 24px;
+}
+footer div {
+  font-size: 10px;
+  color:var(--white);
+}
+footer a {
+  color: var(--hovergrey);
+}
+
+
+.about-me {
+  flex: 4;
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; /* ?? Don't understand the linespacing changes as we change the width */
+}
+.contact-container {
+  margin: 0 0;
+  width: 100%;
+
+}
+.contact-section {
+  flex: 4;
+  background-color: var(--white);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.contact-section a {
+  padding: 20px;
+  flex:0 0 auto;
+}
+
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 
+What does the flex-direction property define?
+It defines in which direction the container wants to stack the flex items
+What is it doing here? 
+We are telling the main body and navbar to stack vertically in a column
+*/
+@media screen and (max-width: 768px) {
+  main,
+  section, 
+  nav {
+    flex-direction: column;
+  }
+  aside {
+    text-align:center;
+  }
+}
