@@ -1,0 +1,16 @@
+@media only screen and (max-width: 576px) {
+  /* changes header to a column when on mobile */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+  /* changes nav links to column on mobile */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,6 +1,6 @@
 :root {
   --white: rgb(241, 231, 231);
-  --green: #006671;
+  --green: #037b88;
   --blue: #13293d;
   --hovergrey: rgb(145, 137, 137);
 }
@@ -44,16 +44,17 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  min-width: 300px;
-  font-size: 140%;
+/*  min-width: 150px; */
+  font-size: 120%;
 }
 
 nav a {
   color: var(--white);
-  padding: 14px 20px;
+  padding: 0px 20px;
   text-decoration: none;
   text-align: center;
   font-weight:bolder;
+  justify-content: space-between;
 }
 
 nav a:hover {
@@ -69,7 +70,7 @@ nav a:hover {
   max-height: 500px;
   height: 400px;
   margin-bottom: 25px;
-
+  position:relative;
 }
 /* so that image goes to end? ?? don't understand why we need 100% here and above */
 .feature-image img {
@@ -97,6 +98,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 section h2 {
@@ -110,6 +112,7 @@ aside {
   text-align: right;
   font-size: 300%;
   min-width: 250px;
+ /* width: 20%; */
 
   /* border-right: 5px;   ??why doesn't this work? 
   border-right-color: var(--blue);*/
@@ -144,22 +147,42 @@ footer a {
 }
 .contact-container {
   margin: 0 0;
-  width: 100%;
+  /* width: 100%; */
 
 }
 .contact-section {
-  flex: 4;
+  flex: 4 1 auto;
   background-color: var(--white);
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
+ /* width: 80%; */
 }
 .contact-section a {
-  padding: 20px;
-  flex:0 0 auto;
+  padding: 2%;
+  flex:1 auto auto;
 }
+.projects-container {
+  margin: 0 0;
+ /* width: 100%;*/
+  margin-bottom: 20px;
+  
 
+}
+.projects-section {
+  flex: 4;
+  background-color: var(--white);
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+ /* width: 80%; */
+}
+.projects-section img{
+  padding: 20px;
+  flex:1 0 auto;
+}
 
 /* 
 What is the flex property a shorthand property for?
@@ -195,11 +218,40 @@ We are telling the main body and navbar to stack vertically in a column
 */
 @media screen and (max-width: 768px) {
   main,
-  section, 
-  nav {
+   /*section, */
+  /* nav*/ { 
     flex-direction: column;
   }
   aside {
     text-align:center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* main, 
+  section, 
+  nav {
+    flex-direction: column;
+  }
+  */
+  #projects {
+    text-align:center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* changes header to a column when on mobile */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+  /* changes nav links to column on mobile */
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
