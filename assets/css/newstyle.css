@@ -52,16 +52,7 @@ nav a:hover {
 	background-color: var(--green);
 }
 
-.feature-image {
-	max-height: 500px;
-	height: 400px;
-	margin-bottom: 25px;
-}
-/* so that image goes to end? ?? don't understand why we need 100% here and above */
-.feature-image img {
-	height: 100%;
-	width: 100%;
-}
+
 /*
 #avatar {
     position:absolute;
@@ -84,6 +75,7 @@ nav a:hover {
 main {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction:column;
 }
 
 section {
@@ -97,6 +89,20 @@ section h2 {
 	color: var(--green);
 	font-size: 150%;
 	text-align: center;
+}
+
+.feature-image {
+	max-height: 500px;
+	height: 400px;
+	margin-bottom: 25px;
+	/* width: 100%; */
+	display:flex;
+
+}
+/* so that image goes to end? ?? don't understand why we need 100% here and above */
+.feature-image img {
+	height: 100%;
+	width:100%;
 }
 
 .about-me-container {
@@ -239,24 +245,9 @@ footer a {
 	main {
 		flex-direction: column;
 	}
-	aside {
-		text-align: center;
-	}
 }
 
-@media screen and (max-width: 900px) {
-	/* main, 
-    section, 
-    nav {
-      flex-direction: column;
-    }
-    */
-	#projects {
-		text-align: center;
-	}
-}
-
-@media only screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
 	/* changes header to a column when on mobile */
 	header {
 		display: flex;
@@ -270,4 +261,5 @@ footer a {
 		flex-direction: column;
 		align-items: center;
 	}
+
 }
