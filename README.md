@@ -58,7 +58,7 @@ Below is a screenshot of my portfolio page as it would look on a mobile device.
 
 ### Deployed Application
 
-[The deployed GitPage Application](https://llwaterhouse.github.io/Portfolio-Project-LindaLW/)
+[The deployed GitPage Application](https://llwaterhouse.github.io/Portfolio-LindaLW/)
 
 
 
