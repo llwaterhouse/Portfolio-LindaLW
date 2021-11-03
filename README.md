@@ -23,6 +23,8 @@ In Homework #2, we were asked to:
 
 * I also used media queries to make other areas of the page responsive.
 
+* When you click on a project image, it takes you to the deployed page for that project.
+
 ## Built With
 
 * HTML
