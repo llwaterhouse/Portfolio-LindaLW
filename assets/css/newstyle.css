@@ -137,6 +137,7 @@ section h2 {
 #avatar img{
  
     margin-right: 5%;
+	flex:2;
     width:100%; 
     min-width:100px;
 
