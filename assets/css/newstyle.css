@@ -28,6 +28,9 @@ header h1 {
 	font-size: 200%;
 }
 
+/* nav bar must move around as screen resizes
+ * and become column when gets really small
+ */
 nav {
 	display: flex;
 }
@@ -52,32 +55,14 @@ nav a:hover {
 	background-color: var(--green);
 }
 
-
-/*
-#avatar {
-    position:absolute;
-    bottom:10px;
-    left: 10px;
-    max-width:5%;
-    max-height:5%;
-*/
-
-/*
-  .backgroundimg {
-    background-image: url(../images/New-Jersey-landscape2.jpg);
-  background-position: center;
-    position: relative;
-    display:flex;
-    align-items: flex-end
-    height: 500px;
-  }
-  */
 main {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction:column;
 }
-
+/* There are 3 portfolio sections
+ * About Me, Projects, and Contact Me
+ */
 section {
 	display: flex;
 	flex-wrap: wrap;
@@ -91,6 +76,7 @@ section h2 {
 	text-align: center;
 }
 
+/* Banner image */
 .feature-image {
 	max-height: 500px;
 	height: 400px;
@@ -99,7 +85,7 @@ section h2 {
 	display:flex;
 
 }
-/* so that image goes to end? ?? don't understand why we need 100% here and above */
+
 .feature-image img {
 	height: 100%;
 	width:100%;
@@ -128,6 +114,7 @@ section h2 {
 
 }
 
+/* My picture on the left hand side */
 #avatar {
     display:flex;
     align-items:center;
@@ -135,14 +122,15 @@ section h2 {
 
 }
 #avatar img{
- 
-    margin-right: 5%;
+     margin-right: 5%;
 	flex:2;
     width:100%; 
     min-width:100px;
 
 }
-
+/* button that displays project name 
+ * on top of screenshot 
+ */
 button {
     background: var(--green);
     font-size: 18px;
@@ -150,6 +138,7 @@ button {
     bottom: 10px;
     left:10px;
 }
+/* Projects section */
 .projects-container {
 	margin: 0 0;
 	background-color: var(--white);
@@ -165,21 +154,21 @@ button {
 	margin-bottom: 1%;
 }
 .projects-section {
-	/* flex: 1 1 auto; */
 	padding: 2%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	/* width: 80%; */
 }
+
+/* The first project screenshot must be larger */
+
 #firstProject {
 	width: 100%;
-	/* flex: 1 1 auto; */
+
 }
 
+/* Each project screenshot links to a working page */
 .projects-section a {
-	/* flex: 1 1 auto; */
 	border: 10px groove var(--blue);
 	margin-bottom: 20px;
     width: 48%;
@@ -196,6 +185,7 @@ button {
     border-color: var(--green);
 }
 
+/* Now for the Contact me section */
 .contact-container {
 	margin: 0 0;
 	background-color: var(--white);
@@ -222,7 +212,7 @@ button {
 .contact-section img {
 	flex-shrink: 1;
 }
-
+/* And finally, the footer */
 footer {
 	padding: 20px;
 	text-align: center;

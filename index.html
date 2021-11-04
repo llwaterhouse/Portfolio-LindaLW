@@ -1,105 +1,111 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Linda Waterhouse Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png"  href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <section>
-        <h1>Linda Waterhouse</h1>
-      </section>
-      <!-- Navbar -->
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        
-        </ul>
-      </nav>
-    </header>
-    
-    <!-- Body -->
-    <main>  
- <!-- Format document isn't working!!! ??? -->
+<head>
+  <title>Linda Waterhouse Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/newstyle.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <section>
+      <h1>Linda Waterhouse</h1>
+    </section>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Body -->
+  <main>
     <!-- banner image -->
-
-    <!-- TODO:  <figure <!--  ?? class="backgroundimg" class = "feature-image">  add avatar on top-->
-
-    <figure  class = "feature-image">
-     <img src="assets/images/New-Jersey-landscape.jpg" alt="NJ Landscape"> 
-     <!-- <img id="avatar" src="assets/images/caricature-circle.png" alt="caricature of Linda Waterhouse" width=50px>  -->
+    <figure class="feature-image">
+      <img src="assets/images/New-Jersey-landscape.jpg" alt="NJ Landscape">
     </figure>
-      <!-- Portfolio sections -->
+
+    <!-- Portfolio sections -->
+    <!-- First the About me section -->
     <section class="about-me-container" id="about">
       <h2>About Me</h2>
-        <article class="about-me-section">
-          <div id="avatar">
-            <img src="assets/images/caricature-circle.png" alt="Caricature of Linda Waterhouse">
-          </div>
-          <div>
-          <p>Based in beautiful Hunterdon County NJ, I am enjoying taking a Coding Bootcamp to become a Full Stack Developer. I was previously a C/C++/Unix developer for over 15 years and I'm having a great time becoming up to speed with the latest technologies. </p>
-          <p>For the past 10 years I've owned a Digital Marketing business, and have learned HTML and CSS along with other technologies to update my clients' websites.  Owning a business requires wearing many hats, and I've broadened my experience in ways I never could have imagined. </p>
-          <p>Although I've enjoyed running my business, I look forward to working with a team on a project again.  I find brainstorming with other people to be invigorating and love the idea generation and clarity it brings. I've been taking courses in Java, Javascript, algorithms and data structures this past year. With the knowledge gained from Bootcamp, I am ready to apply myself to a project. When someone gives me an assignment, they know I won't stop until I GET IT DONE. </p>
-          <p>When I'm not learning new skills, coding or working, I spend time in nature which renews my spirit.  Hiking, biking, kayaking are some of my favorite activities.  I've also recently taken up pickleball which is a whole lot of fun. </p>
-          
+      <article class="about-me-section">
+        <!-- Add my avatar to the side -->
+        <div id="avatar">
+          <img src="assets/images/caricature-circle.png" alt="Caricature of Linda Waterhouse">
         </div>
-          
-        </article>
-    </section>
+        <div>
+          <p>Based in beautiful Hunterdon County NJ, I am enjoying taking a Coding Bootcamp to become a Full Stack Developer. I was previously a C/C++/Unix developer for over 15 years and I'm having a great time becoming up to speed with the latest technologies. </p>
+          <p>For the past 10 years I've owned a Digital Marketing business, and have learned HTML and CSS along with other technologies to update my clients' websites. Owning a business requires wearing many hats, and I've broadened my experience in ways I never could have imagined. </p>
+          <p>Although I've enjoyed running my business, I look forward to working with a team on a project again. I find  brainstorming with other people to be invigorating and love the idea generation and clarity it brings. I've been taking courses in Java, Javascript, algorithms and data structures this past year. With the knowledge gained from Bootcamp, I am ready to apply myself to a project. When someone gives me an assignment, they know I won't stop until I GET IT DONE. </p>
+          <p>When I'm not learning new skills, coding or working, I spend time in nature which renews my spirit. Hiking, biking, kayaking are some of my favorite activities. I've also recently taken up pickleball which is a whole lot of fun. </p>
 
+        </div>
+
+      </article>
+    </section>
+    <!-- Now the projects section -->
     <section class="projects-container" id="projects">
       <h2>Projects</h2>
-    
       <article class="projects-section">
         <!-- Top image should be largest -->
-        <a id = "firstProject" href="https://llwaterhouse.github.io/Code-Refactor-LindaLW/" alt="image of Horiseon projects" target="_blank"><img src="./assets/images/Code-refactor-img.PNG" alt="Screenshot of a project"> 
-        <button>Code Refactor</button>
+        <!-- add button on top of project screenshot with name of project -->
+        <a id="firstProject" href="https://llwaterhouse.github.io/Code-Refactor-LindaLW/"
+          alt="image of Horiseon projects" target="_blank"><img src="./assets/images/Code-refactor-img.PNG"
+            alt="Screenshot of a project">
+          <button>Code Refactor</button>
         </a>
-    
-        <a  href="https://llwaterhouse.github.io/prework-about-me/" target="_blank"><img src="./assets/images/Pre-work-img.PNG" alt="image of pre-work About page" >
+
+        <a href="https://llwaterhouse.github.io/prework-about-me/" target="_blank"><img
+            src="./assets/images/Pre-work-img.PNG" alt="image of pre-work About page">
           <button>Pre-work</button> </a>
-    
-        <a  href="#"><img src="./assets/images/Portfolio-project2.png" alt="image of portfolio page" >
+
+        <!-- This project itself! -->
+        <a href="#"><img src="./assets/images/Portfolio-project2.png" alt="image of portfolio page">
           <button>Portfolio</button> </a>
         </a>
-    
-        <!-- add buttons on top with name of project and technologies used -->
+
+
       </article>
-    </section>      
-    
-    <section class= "contact-container" id="contact">
-     <h2>Contact Me</h2> 
-      <article  class="contact-section">
+    </section>
+    <!-- The Contact Me area -->
+    <section class="contact-container" id="contact">
+      <h2>Contact Me</h2>
+      <article class="contact-section">
 
         <a href="https://github.com/llwaterhouse" target="_blank">
-            <img src="assets/images/GitHub-Mark-120px-plus.png" alt="GitHub icon"> </a>
+          <img src="assets/images/GitHub-Mark-120px-plus.png" alt="GitHub icon"> </a>
         <a href="mailto:lindalw03@gmail.com" target="_blank">
-            <img src="assets/images/email.png" alt="Email icon"> </a>
+          <img src="assets/images/email.png" alt="Email icon"> </a>
         <a href="https://linkedin.com/in/lindalwaterhouse" target="_blank">
-            <img src="assets/images/linkedin-sign.png" alt="LinkedIn icon"> </a>      
+          <img src="assets/images/linkedin-sign.png" alt="LinkedIn icon"> </a>
 
       </article>
-    
-    </section>  
-      
-    </main>
 
-    <!-- Footer -->
-    <footer>
-      <h2>
-        Made with 💖 by Linda
-      </h2>
-      <!-- Must give credit! -->
-      <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-      
-    </footer>
-  </body>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <h2>
+      Made with 💖 by Linda
+    </h2>
+    <!-- Must give credit! -->
+    <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a
+        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+  </footer>
+</body>
+
 </html>
